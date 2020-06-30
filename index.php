@@ -27,18 +27,60 @@ require_once('php/component.php')
 
 <body>
 
+    <?php require_once("php/navbar.php"); ?>
+
+    <div class="container-fluid row" style="padding-top: 20px;">
+        <div class="row">
+            <div id="shopList" class="col-sm-3">
+                <a>Shop</a>
+                <a> > </a>
+                <a>All Product</a>
+            </div>
+
+            <div class="dropdown" id="shopCart">
+                <a style="padding-right: 20px;">SORT BY: </a>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">TYPE OF SORT</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Feauture</a>
+                    <a class="dropdown-item" href="#">Most Popular</a>
+                    <a class="dropdown-item" href="#">Price : Low To High</a>
+                    <a class="dropdown-item" href="#">Price : Hight To Low</a>
+                    <a class="dropdown-item" href="#">Newest To Oldest</a>
+                    <a class="dropdown-item" href="#">Oldest To Newest</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
     <div class="container center">
         <div class="row text-center py-5">
             <?php
-            component("Ginger", 15, "./Picture/Photos/Shop/SevenTeaOne/Ginger Mint Tea.jpg");
-            component("Ginger", 15, "./Picture/Photos/Shop/SevenTeaOne/Ginger Mint Tea.jpg");
+            component();
+            component();
+            component();
+            component();
+            component();
+            component();
+            component();
+
             ?>
         </div>
     </div>
 
 
+    <div class="col">
+        <div class="mx-auto text-center">
+            <a class="troli" href="#prev"><img src="Picture/icon shop/cart/navigate_before.png" /></a>
+            <a class="arrow" href="#next"><img src="Picture/icon shop/cart/navigate_next.png" /></a>
+        </div>
+    </div>
 
-
+    <!-- Footer -->
+    <?php require_once("php/footer.php"); ?>
+    <!-- Footer -->
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
